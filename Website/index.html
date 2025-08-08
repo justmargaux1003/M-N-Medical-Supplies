@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>M&N Medical Supplies</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-container">
+      <div class="logo">M&N Medical Supplies</div>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="#shop">Shop</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#quiz">Quiz</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="cart-chat">
+        <button class="chat-btn" id="chatBtn">Chat with Us</button>
+        <a href="#cart" class="cart-icon" aria-label="Shopping Cart">🛒</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-container">
+      <div class="hero-text">
+        <h1>Gear Up with M&N — Medical Supplies That Keep You Winning.</h1>
+        <p class="subheadline">
+          Reliable. Fast. Fresh. Your one-stop shop for all things medical,
+          designed for the hustle.
+        </p>
+        <div class="hero-cta">
+          <a href="#shop" class="btn btn-primary">Shop Now</a>
+          <button class="btn btn-secondary" id="chatBtn2">Chat with Us</button>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img
+          src="https://images.unsplash.com/photo-1588776814546-0a3a7a3a3a3a?auto=format&fit=crop&w=800&q=80"
+          alt="Diverse healthcare workers in action"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- Why M&N Section -->
+  <section class="why-mn" id="about">
+    <div class="container">
+      <h2>Why M&N?</h2>
+      <div class="features">
+        <div class="feature">
+          <img src="https://img.icons8.com/ios-filled/50/4a90e2/fast-delivery.png" alt="Fast Delivery Icon" />
+          <h3>Fast & Reliable</h3>
+          <p>Need it now? We’ve got your back with lightning-fast shipping.</p>
+        </div>
+        <div class="feature">
+          <img src="https://img.icons8.com/ios-filled/50/4a90e2/verified-account.png" alt="Quality Icon" />
+          <h3>Quality You Can Trust</h3>
+          <p>Top-tier supplies vetted by healthcare pros.</p>
+        </div>
+        <div class="feature">
+          <img src="https://img.icons8.com/ios-filled/50/4a90e2/community.png" alt="Community Icon" />
+          <h3>Community Vibes</h3>
+          <p>Join thousands who trust M&N for their daily grind.</p>
+        </div>
+      </div>
+      <a href="#newsletter" class="btn btn-primary">Join the squad → Sign up for exclusive deals + tips</a>
+    </div>
+  </section>
+
+  <!-- Shop by Category -->
+  <section class="shop-categories" id="shop">
+    <div class="container">
+      <h2>Shop by Category</h2>
+      <div class="category-grid">
+        <a href="#" class="category-card">
+          <img src="https://img.icons8.com/ios-filled/100/4a90e2/mask.png" alt="PPE & Safety Gear" />
+          <h3>PPE & Safety Gear</h3>
+        </a>
+        <a href="#" class="category-card">
+          <img src="https://img.icons8.com/ios-filled/100/4a90e2/stethoscope.png" alt="Diagnostic Tools" />
+          <h3>Diagnostic Tools</h3>
+        </a>
+        <a href="#" class="category-card">
+          <img src="https://img.icons8.com/ios-filled/100/4a90e2/first-aid-kit.png" alt="Everyday Essentials" />
+          <h3>Everyday Essentials</h3>
+        </a>
+        <a href="#" class="category-card">
+          <img src="https://img.icons8.com/ios-filled/100/4a90e2/heart-with-pulse.png" alt="Wellness & Recovery" />
+          <h3>Wellness & Recovery</h3>
+        </a>
+      </div>
+      <a href="#" class="btn btn-primary">Find your fit → Shop Now</a>
+    </div>
+  </section>
+
+  <!-- Interactive Quiz Section -->
+  <section class="quiz-section" id="quiz">
+    <div class="container">
+      <h2>What’s Your Medical Supply Style?</h2>
+      <p>Take our quick quiz and find the gear that fits your vibe.</p>
+      <button class="btn btn-secondary" id="startQuizBtn">Start Quiz</button>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <div class="container">
+      <h2>Testimonials</h2>
+      <div class="testimonial-slider">
+        <div class="testimonial active">
+          <p>"M&N saved me during my clinical rotation — fast delivery and legit quality!"</p>
+          <cite>— Taylor R.</cite>
+        </div>
+        <div class="testimonial">
+          <p>"Finally, a medical supply site that gets the hustle and delivers on time."</p>
+          <cite>— Jordan L.</cite>
+        </div>
+      </div>
+      <div class="testimonial-controls">
+        <button id="prevTestimonial" aria-label="Previous testimonial">‹</button>
+        <button id="nextTestimonial" aria-label="Next testimonial">›</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Signup -->
+  <section class="newsletter" id="newsletter">
+    <div class="container">
+      <h2>Join the M&N Crew!</h2>
+      <p>Get exclusive promos, health hacks, and fresh drops straight to your inbox.</p>
+      <form id="newsletterForm">
+        <input
+          type="email"
+          id="emailInput"
+          placeholder="Enter your email"
+          required
+          aria-label="Email address"
+        />
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+      </form>
+      <p id="formMessage" role="alert" aria-live="polite"></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <div class="container footer-container">
+      <div class="footer-social">
+        <a href="https://www.facebook.com/MNMedsupplies" target="_blank" rel="noopener" aria-label="Facebook">Facebook</a>
+        <a href="#" aria-label="Instagram">Instagram</a>
+        <a href="#" aria-label="Twitter">Twitter</a>
+      </div>
+      <div class="footer-contact">
+        <p>Contact us: <a href="mailto:info@mnmedsupplies.com">info@mnmedsupplies.com</a></p>
+      </div>
+      <p class="footer-copy">&copy; 2024 M&N Medical Supplies. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Chat Modal -->
+  <div id="chatModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="chatTitle">
+    <div class="modal-content">
+      <button class="close-btn" id="closeChat" aria-label="Close chat">×</button>
+      <h2 id="chatTitle">Chat with M&N Support</h2>
+      <p>Hi! How can we help you today?</p>
+      <form id="chatForm">
+        <textarea id="chatInput" placeholder="Type your message..." required></textarea>
+        <button type="submit" class="btn btn-primary">Send</button>
+      </form>
+      <div id="chatResponse" aria-live="polite"></div>
+    </div>
+  </div>
+</body>
+</html>
